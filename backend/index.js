@@ -12,7 +12,7 @@ let users = [];
 // Middleware
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://user-auth-cookie-handler.vercel.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
