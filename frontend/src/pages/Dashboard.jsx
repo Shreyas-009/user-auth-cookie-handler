@@ -15,7 +15,7 @@ const Dashboard = () => {
         const token = Cookies.get("authToken");
 
         const response = await axios.post(
-          "http://localhost:8080/protected",
+          "https://user-auth-cookie-handler-backend.vercel.app/protected",
           {},
           {
             headers: { Authorization: `Bearer ${token}` },

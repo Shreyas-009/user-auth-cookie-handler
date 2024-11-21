@@ -13,9 +13,9 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/login",
+        "https://user-auth-cookie-handler-backend.vercel.app/login",
         { email, password },
-        { withCredentials: true } 
+        { withCredentials: true }
       );
 
       const authToken = res.data.data;

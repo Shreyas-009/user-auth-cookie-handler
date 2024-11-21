@@ -10,11 +10,14 @@ const Register = () => {
     const email = e.target[1].value;
     const password = e.target[2].value;
     try {
-      const res = await axios.post("http://localhost:8080/register", {
-        username,
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://user-auth-cookie-handler-backend.vercel.app/register",
+        {
+          username,
+          email,
+          password,
+        }
+      );
       if (res) {
         navigate("/login");
       }
