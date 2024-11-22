@@ -13,6 +13,7 @@ const Dashboard = () => {
     const fetchUserProfile = async () => {
       try {
         const token = Cookies.get("authToken");
+        console.log(token);
 
         const response = await axios.post(
           "https://user-auth-cookie-handler-backend.vercel.app/protected",
